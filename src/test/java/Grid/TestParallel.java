@@ -22,7 +22,7 @@ public class TestParallel {
 	}
 	
 	@Test
-	@Parameters({"browsers"})
+	@Parameters({"browser"})
 	public void doSearch(String browsers) throws MalformedURLException, InterruptedException{
 		
 		if(browsers.equalsIgnoreCase("firefox")){
@@ -39,7 +39,8 @@ public class TestParallel {
 		driver.set(new RemoteWebDriver(new URL("http://localhost:4444"),cap));
 		getDriver().get("http://google.com");
 		getDriver().findElement(By.name("q")).sendKeys("Selenium Grid");
-		Thread.sleep(10000);
+		Thread.sleep(3000);
+		System.out.println("Title of page "+getDriver().getTitle());
 		getDriver().quit();
 	}
 }
