@@ -36,7 +36,7 @@ public class TestParallel {
 			cap = new EdgeOptions();
 		}
 		
-		driver.set(new RemoteWebDriver(new URL("http://localhost:4444"),cap));
+		driver.set(new RemoteWebDriver(new URL("http://43.204.232.126:4444"),cap));
 		getDriver().get("http://google.com");
 		getDriver().findElement(By.name("q")).sendKeys("Selenium Grid");
 		Thread.sleep(3000);
