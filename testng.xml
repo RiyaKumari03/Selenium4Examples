@@ -22,14 +22,14 @@
 		</classes>
 	</test> <!-- Test -->
 	
-	<test thread-count="5" name="Chrome Test2">
+	<!-- <test thread-count="5" name="Chrome Test2">
 		<parameter name="browser" value="chrome" />
 		<classes>
 
 			<class name="Grid.TestParallel" />
 
 		</classes>
-	</test> <!-- Test -->
+	</test> Test
 	
 	<test thread-count="5" name="Chrome Test3">
 		<parameter name="browser" value="chrome" />
@@ -38,6 +38,6 @@
 			<class name="Grid.TestParallel" />
 
 		</classes>
-	</test> <!-- Test -->
-	
+	</test> Test
+	 -->
 </suite> <!-- Suite -->
